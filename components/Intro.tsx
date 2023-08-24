@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { BsArrowRight } from 'react-icons/bs'
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
+import {FaGithubSquare} from 'react-icons/fa'
 
 export default function Intro() {
     const {ref} = useSectionInView('Home', 0.5);
@@ -37,7 +38,7 @@ export default function Intro() {
                         className='h-24 w-24 rounded-full border-[0.35rem] object-cover shadow-xl border-white group-hover:ring-2 ring-black/50  transition '
                     />
                 </motion.div>
-                <motion.span className='absolute text-4xl bottom-0 right-0 drop-shadow-md pointer-events-none' 
+                <motion.span className='absolute text-4xl bottom-0 right-0 drop-shadow-md pointer-events-none dark:text-opacity-100' 
                     initial= {{ opacity:0, scale:0 }}
                     animate= {{ opacity:1, scale:1 }}
                     transition={{
@@ -70,6 +71,13 @@ export default function Intro() {
 
         >
             <Link href="#contact" onClick={() => {setActiveSection("Contact"), setTimeOfLastClick(Date.now())}} className='bg-gray-900 outline-none text-white px-7 py-3 flex items-center gap-2 rounded-full max-w-[16rem] active:scale-100 hover:scale-110 hover:bg-gray-950 transition'>Contact me here <BsArrowRight className="opacity-84 group-hover:opacity-100 transition group-hover:translate-x-1 group-active:translate-x-0" /></Link>
+            <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60 dark:hover:text-white dark:hover:bg-white/20"
+          href="https://github.com/DarKS4ys"
+          target="_blank"
+        >
+          <FaGithubSquare />
+        </a>
         </motion.div>
     </section>
   )
