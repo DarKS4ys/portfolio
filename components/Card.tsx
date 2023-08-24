@@ -24,7 +24,7 @@ export function Card({heading, description, icon}: {heading: string, description
           <>
       
           
-          <div className='hover:shadow-sm bg-gray-50 hover:bg-gray-100 transition w-full sm:max-w-[19rem] max-w-[28.25rem] p-6 sm:p-8 sm:px-7 pt-6 border border-black/10 rounded-lg overflow-hidden relative sm:min-h-[19rem] min-h-[13.3rem] '>
+          <div className='hover:shadow-sm dark:bg-white/10 dark:hover:bg-white/20 bg-gray-50 hover:bg-gray-100 transition w-full sm:max-w-[19rem] max-w-[28.25rem] p-6 sm:p-8 sm:px-7 pt-6 border border-black/10 rounded-lg overflow-hidden relative sm:min-h-[19rem] min-h-[13.3rem] '>
                   <div className="flex justify-center items-center text-center mb-4">
                       {icon}
                   </div>
