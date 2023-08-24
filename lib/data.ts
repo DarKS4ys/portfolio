@@ -52,7 +52,7 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "",
     description:
-      "I worked as a front-end developer for 2 years and made many landing pages for both other people and my projects. I also upskilled to the full stack.",
+      "I worked as a front-end developer for 2 years and made many landing pages for both other people and my projects. I also upskilled to full stack.",
     icon: React.createElement(CgWorkAlt),
     date: "2020 - 2022",
   },
