@@ -28,7 +28,7 @@ export default function ProjectDetails({
   const allImages = [imageUrl, ...images];
 
   return (
-    <div className="flex flex-col gap-4 p-4">
+    <div className="flex flex-col gap-2 sm:gap-4 p-4">
       <div className="w-full h-full py-8 px-12">
         <Carousel className="w-full rounded-lg">
           <CarouselContent>
@@ -44,8 +44,8 @@ export default function ProjectDetails({
           <CarouselNext />
         </Carousel>
       </div>
-      <h3 className="text-4xl font-semibold">{title}</h3>
-      <h3 className="text-xl opacity-60 font-light">{description}</h3>
+      <h3 className="text-3xl sm:text-4xl font-semibold">{title}</h3>
+      <h3 className="text-sm sm:text-xl opacity-60 font-light">{description}</h3>
       <ul className="flex flex-wrap pt-8 gap-2 sm:mt-auto">
         {tags.map((tag, index) => (
           <li

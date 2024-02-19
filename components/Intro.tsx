@@ -69,7 +69,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col w-fit mx-auto group/container sm:flex-row items-center relative justify-center gap-3 px-4 font-medium text-lg"
+        className="flex w-fit mx-auto group/container items-center relative justify-center gap-3 px-4 font-medium text-lg"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -91,7 +91,7 @@ export default function Intro() {
           <FaGithubSquare />
         </a>
 
-        <div className="absolute -right-16 top-12 opacity-0 scale-75 rotate-45 -translate-x-8 translate-y-0 group-hover/container:translate-y-2 group-hover/container:translate-x-0 group-hover/container:rotate-0 duration-500 group-hover/container:opacity-80 group-hover/container:scale-100 transition">
+        <div className="absolute -right-16 top-12 opacity-0 scale-75 rotate-45 hidden md:flex -translate-x-8 translate-y-0 group-hover/container:translate-y-2 group-hover/container:translate-x-0 group-hover/container:rotate-0 duration-500 group-hover/container:opacity-80 group-hover/container:scale-100 transition">
           <div className="relative flex gap-2 items-center">
             <Image alt='Swirly Arrow' src={'/swirlArrow.svg'} className="dark:invert rotate-[70deg]" width={120} height={120} />
             <h1 className="absolute -right-[13.7rem] bottom-1 font-bold text-xl opacity-0 group-hover/container:opacity-100 transition duration-1000">Checkout my github!</h1>
