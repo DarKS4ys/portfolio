@@ -5,7 +5,7 @@ import { cardData } from '@/lib/data';
 import SectionHeading from './SectionHeading';
 import { useSectionInView } from '@/lib/hooks';
 import { motion } from 'framer-motion';
-import { useMediaQuery } from 'react-responsive';
+import clsx from 'clsx';
 
 const fadeInAnimationVariants = {
   initial: {
@@ -20,11 +20,10 @@ const fadeInAnimationVariants = {
 
 export default function Cards() {
   const { ref } = useSectionInView('Services', 0.65);
-  const isMobile = useMediaQuery({ maxWidth: 639 });
 
   return (
     <motion.div
-      className="mb-28 sm:mb-40"
+      className="mb-28 md:mb-40 flex flex-col items-center"
       ref={ref}
       variants={fadeInAnimationVariants}
       transition={{ delay: 0.2 }}
@@ -34,19 +33,25 @@ export default function Cards() {
     >
       <SectionHeading heading="Transforming your vision into reality" />
       <div className="flex items-center justify-center">
-      <div
+        <div
           id="services"
-          className={`scroll-mt-52 mt-[0.8rem] grid ${
-            isMobile ? 'grid-cols-2' : 'grid-cols-3'
-          } x-1 gap-3 sm:gap-4 max-w-[450px] sm:max-w-none`}
+          className={clsx('scroll-mt-52 mt-[0.8rem] w-full')}
         >
-          {cardData.slice(0, isMobile ? 2 : 3).map((card, index) => (
+          <div className="grid gap-3 md:hidden max-w-[450px] grid-cols-2">
+          {cardData.slice(0, 2).map((card, index) => (
             <Card key={index} {...card} />
           ))}
+          </div>
+
+          <div className="hidden md:grid gap-4 max-w-none grid-cols-3">
+          {cardData.slice(0, 3).map((card, index) => (
+            <Card key={index} {...card} />
+          ))}
+          </div>
         </div>
       </div>
-      <div className="sm:hidden block">
-        <div className="flex flex-col items-center justify-center sm:col-span-1 col-span-2 mt-3">
+      <div className="md:hidden block">
+        <div className="flex flex-col items-center justify-center md:col-span-1 col-span-2 mt-3">
           {cardData.slice(2, 3).map((card, index) => (
             <Card2 key={index} {...card} />
           ))}

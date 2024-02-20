@@ -100,6 +100,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "Tailwind", "Framer-Motion", "Landing page"],
     imageUrl: landingImg,
     images: [landing2, landing3, landing4, landing5, landing6, landing7, landing8],
+    link: 'https://www.stoiccord.com'
   },
   {
     title: "Affluent AI Landing Page",
@@ -108,6 +109,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "Framer-Motion", "Tailwind", "Landing page"],
     imageUrl: affluentImg,
     images: [affluent1, affluent2, affluent3],
+    link: 'https://affluentaisolutions.com'
   },
   {
     title: "STOIC 2.0",
@@ -116,6 +118,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "TypeScript", "Tailwind", "Firebase", "Vimeo", "Stripe", "Framer-Motion", 'application'],
     imageUrl: platformImg,
     images: [platform1, platform2, platform3, platform4, platform5, platform6, platform7],
+    link: 'https://app.stoiccord.com'
   },
   {
     title: "Prime Trading Landing Page",
@@ -124,6 +127,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "Framer-Motion", "Tailwind", "AI Chatbot", "Landing page"],
     imageUrl: primeImg,
     images: [prime1, prime2, prime3, prime4],
+    link: 'https://www.primetradingco.net'
   },
   {
     title: "Auth Toolbox",
@@ -131,7 +135,8 @@ export const projectsData = [
       "Auth Toolbox is a personal project for streamlined authentication, supporting provider-based login, email login and verification, role-based middleware protection, and multi-factor authentication for enhanced security.",
     tags: ["React", "Next.js", "Prisma","Tailwind", "MongoDB", "Auth.js",  "Resend", "TypeScript", "Application"],
     imageUrl: authImg,
-    images: [auth1, auth2, auth3, auth4]
+    images: [auth1, auth2, auth3, auth4],
+    link: 'https://auth-toolbox-dark.vercel.app'
   },
 ] as const;
 
