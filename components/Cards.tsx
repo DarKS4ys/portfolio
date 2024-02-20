@@ -19,7 +19,7 @@ const fadeInAnimationVariants = {
 };
 
 export default function Cards() {
-  const { ref } = useSectionInView('Services', 0.65);
+  const { ref } = useSectionInView('Services', 0.35);
 
   return (
     <motion.div

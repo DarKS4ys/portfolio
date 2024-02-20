@@ -4,9 +4,9 @@ export default function Footer() {
   return (
     <footer className='mb-10 px-4 text-center text-gray-500'>
         <small className='mb-2 block text-xs'>
-            &copy; 2023 Dark. All rights reserved.
+            &copy; 2024 Dark. All rights reserved.
         </small>
-        <p className='text-xs'>
+        <p className='text-xs font-light'>
             <span className='font-semibold'>About this website:</span> built with React & Next.js (App Router & Server Actions), Typescript, Tailwind CSS, Framer Motion, React Email & Resend, Vercel Hosting.
         </p>
     </footer>
