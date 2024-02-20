@@ -63,7 +63,6 @@ export default function Project({
 
             <Image
               src={imageUrl}
-              quality={95}
               alt={title}
               placeholder="blur"
               className="absolute hidden sm:block top-9 -right-40 w-[29rem] group-hover:brightness-110 rounded-t-lg shadow-2xl shadow-black/80 group-even:right-[initial] group-even:-left-[9.5rem]
