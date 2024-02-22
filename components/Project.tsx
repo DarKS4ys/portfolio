@@ -79,7 +79,7 @@ export default function Project({
             />
           </section>
 
-          <div className="bg-gradient-to-b from-gray-100 to-transparent inset-0 group-active:scale-90 transition rounded-lg w-full h-full absolute z-20 sm:hidden"/>
+          <div className="bg-gradient-to-b from-gray-100 dark:from-gray-800 to-transparent inset-0 group-active:scale-90 transition rounded-lg w-full h-full absolute z-20 sm:hidden"/>
          <Image src={imageUrl} quality={95} alt={title} placeholder="blur" className='group-active:scale-90 rounded-lg transition w-full h-full opacity-25 sm:hidden z-10 pointer-events-none absolute inset-0 object-cover' fill/>
        </motion.div>
       </DialogTrigger>
