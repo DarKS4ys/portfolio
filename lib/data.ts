@@ -10,8 +10,9 @@ import landingImg from '@/public/landing/landingsmall.png'
 import affluentImg from '@/public/affluent/small.png'
 import primeImg from '@/public/prime/primeLandingSmall.png'
 import authImg from '@/public/auth/authsmall.png'
+import blueprintImg from '@/public/blueprint/small.png'
 
-import { platformImages, primeImages, affluentImages, landingImages, authImages } from './imageExport';
+import { platformImages, primeImages, affluentImages, landingImages, authImages, blueprintImages } from './imageExport';
 
 
 export const links = [
@@ -85,6 +86,10 @@ const {
 } = affluentImages;
 
 const {
+  blueprint1, blueprint2, blueprint3, blueprint4
+} = blueprintImages;
+
+const {
   landing2, landing3, landing4, landing5, landing6, landing7, landing8
 } = landingImages;
 
@@ -103,6 +108,15 @@ export const projectsData = [
     link: 'https://www.stoiccord.com'
   },
   {
+    title: "Blueprint Marketing Landing Page",
+    description:
+      "Developed the Blueprint Marketing Agency website to create a strong online presence for the agency, showcasing its services and expertise in digital marketing.",
+    tags: ["React", "Next.js", "Tailwind", "Framer-Motion", "Landing page", "Calendly"],
+    imageUrl: blueprintImg,
+    images: [blueprint1, blueprint2, blueprint3, blueprint4],
+    link: 'https://www.blueprintmarketingagency.com'
+  },
+  {
     title: "Affluent AI Landing Page",
     description:
       "Designed a website for an AI agency specializing in business solutions, featuring captivating animations and a sleek design. The site showcased the agency's innovative AI solutions with precision and elegance.",
@@ -115,12 +129,12 @@ export const projectsData = [
     title: "STOIC 2.0",
     description:
       "Online education platform packed with features like Text/Video lessons, Task tracker, Social Media Analytics, User system and bunch more. I worked as the full-stack developer on this project for 6 months.",
-    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Firebase", "Vimeo", "Stripe", "Framer-Motion", 'application'],
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Firebase", "Vimeo", "Stripe", "Framer-Motion", "Application", "SAAS"],
     imageUrl: platformImg,
     images: [platform1, platform2, platform3, platform4, platform5, platform6, platform7],
     link: 'https://app.stoiccord.com'
   },
-  {
+/*   {
     title: "Prime Trading Landing Page",
     description:
       "Designed a captivating landing page for Prime Trading, a premier trading course, featuring a custom AI chatbot to enrich user engagement and provide a tailored experience for visitors.",
@@ -128,7 +142,7 @@ export const projectsData = [
     imageUrl: primeImg,
     images: [prime1, prime2, prime3, prime4],
     link: 'https://www.primetradingco.net'
-  },
+  }, */
   {
     title: "Auth Toolbox",
     description:

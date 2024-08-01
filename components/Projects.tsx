@@ -29,7 +29,7 @@ export default function Projects() {
           </React.Fragment>
         ))}
         <span className="flex items-center gap-1">
-          <p className="opacity-50">And many more projects on my</p>
+          <p className="text-muted-foreground">And many more projects on my</p>
           <a href="https://github.com/DarKS4ys" target="_blank" className="flex underline-offset-4 hover:underline active:scale-95 transition items-center gap-0.5">
             github
             <svg

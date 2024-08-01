@@ -29,6 +29,11 @@ import auth2 from '@/public/auth/2.png';
 import auth3 from '@/public/auth/3.png';
 import auth4 from '@/public/auth/4.png';
 
+import blueprint1 from '@/public/blueprint/1.png'
+import blueprint2 from '@/public/blueprint/2.png'
+import blueprint3 from '@/public/blueprint/3.png'
+import blueprint4 from '@/public/blueprint/4.png'
+
 export const platformImages = {
   platform1,
   platform2,
@@ -51,6 +56,13 @@ export const affluentImages = {
   affluent2,
   affluent3
 };
+
+export const blueprintImages = {
+  blueprint1,
+  blueprint2,
+  blueprint3,
+  blueprint4
+}
 
 export const landingImages = {
   landing1,
